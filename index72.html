@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Пример скрипта</title>
+      <link rel="stylesheet" href="css/style1.css">
+        <script type="text/javascript">
+          function up() {
+            document.mypic.src = "images/on.png";
+          }
+          function down() {
+            document.mypic.src = "images/off.png";
+          }
+          function up2() {
+            document.mypic2.src = "images/on.png";
+          }
+          function down2() {
+            document.mypic2.src = "images/off.png";
+          }
+        </script>
+    </head>
+
+    <body>
+      <h2>Пример анимации</h2>
+      <a class="bsu" href="https://itiu.bsu.by" onmouseover="up()" onmouseout="down()"><img src="images/off.png" name="mypic" width="200" height="200" alt="ИТИУ БГУ" title="" border="0"></a>
+      <a class="onliner" href="https://onliner.by" onmouseover="up2()" onmouseout="down2()"><img src="images/off.png" name="mypic2" width="200" height="200" alt="Онлайнер" title="" border="0"></a>
+    </body>
+  </html>

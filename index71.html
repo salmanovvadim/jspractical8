@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Пример скрипта</title>
+        <script type = "text/JavaScript">
+          function newColor(color) {
+            alert(`Вы выбрали ${color}`);
+            document.bgColor = color;
+          }
+        </script>
+    </head>
+
+    <body>
+      <p>Выберите цвет фона</p>
+      <form>
+        <input type="button", value="Серый" onclick="newColor('gray')">
+        <input type="button" , value="Светло-серый" onclick="newColor('lightgray')">
+      </form>
+    </body>
+  </html>
